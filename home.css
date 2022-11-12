@@ -11,9 +11,10 @@ body{
 }
 
 #contenedor{
+    margin-top: 20vh;
     background-color: salmon;
-    height: 50vh;
-    width: 50vw;
+    height: 55vh;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +30,25 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    background-image: url(img2.jpeg);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    position: relative;
+}
+
+h1, p{
+    color: white;
+}
+
+p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1{
+    font-size: 44px;
 }
 
 #img1{
@@ -49,4 +69,17 @@ body{
 #si, #no{
     border-radius: 15px;
     border-style: dotted;
+}
+
+@media only screen and (max-width: 1500px) {
+    #contenedor{
+        margin-top: 20vh;
+        background-color: salmon;
+        height: 500px;
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+    }
 }
